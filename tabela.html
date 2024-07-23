@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table, th, td{
+            width: 100%;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas</h1>
+
+    <table>
+        <thead>
+            <!-- Table row -->
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ricardo</td>
+                <td>98765-4321</td>
+                <td>98765-4321</td>
+            </tr>
+            <tr>
+                <td>Ricardo</td>
+                <td colspan="2">98765-4321</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>            
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Trabalhando com tabela Ex. 2</h2>
+    <table>
+        <tr>
+            <th>Nome:</th>
+            <td>Ricardo</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone:</th>
+            <td>98765-4321</td>
+        </tr>
+        <tr>
+            <td>12345-6789</td>
+        </tr>
+    </table>
+
+</body>
+</html>

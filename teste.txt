@@ -1,0 +1,1 @@
+Teste de sincronização do VS Code com o Github 

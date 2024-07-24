@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia do HTML 5</title>
+    <style>
+        table, th, td{
+            width: 100%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 0px;
+        }
+        #tab01 tr:nth-child(even){
+            background-color: rgb(179, 179, 179);
+        }
+        #tab01 tr:nth-child(odd){
+            background-color: #fff;
+        }
+        #tab01 th{
+            background-color: rgba(59, 59, 59, 0.082);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas e com CSS</h1>
+
+    <table id="tab01">
+        <thead>
+            <tr>
+                <th>Aluno:</th>
+                <th>1° Bimestre</th>
+                <th>2° Bimestre</th>
+                <th>3° Bimestre</th>
+                <th>4° Bimestre</th>
+                <th>Média Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="par">
+                <td>João</td>
+                <td>7.0</td>
+                <td>6.0</td>
+                <td>9.0</td>
+                <td>8.0</td>
+                <td>7.5</td>
+            </tr>
+            <tr class="impar">
+                <td>Pedro</td>
+                <td>6.0</td>
+                <td>4.0</td>
+                <td>8.0</td>
+                <td>7.0</td>
+                <td>6.25</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>9.5</td>
+                <td>10</td>
+                <td>9.25</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>5.0</td>
+                <td>7.0</td>
+                <td>8.0</td>
+                <td>6.0</td>
+                <td>6.5</td>
+            </tr>
+            <tr>
+                <td>Ronaldo</td>
+                <td>3.0</td>
+                <td>5.0</td>
+                <td>6.5</td>
+                <td>6.0</td>
+                <td>5.12</td>
+            </tr>
+            <tr>
+                <td>Cesar</td>
+                <td>8.0</td>
+                <td>7.0</td>
+                <td>8.5</td>
+                <td>5.0</td>
+                <td>7.12</td>
+            </tr>
+            <tr>
+                <td>Patricia</td>
+                <td>8.0</td>
+                <td>5.0</td>
+                <td>6.5</td>
+                <td>6.0</td>
+                <td>6.37</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

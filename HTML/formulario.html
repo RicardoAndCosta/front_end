@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com Formulários</title>
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            <label for="fname">Nome:</label>
+            <input type="text" value="" placeholder="Nome" name="fname" />
+            <br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" value="" placeholder="Sobrenome" name="lname" />
+            <br><br>
+            <input type="button" value="Salvar">
+            <input type="submit" value="Enviar">
+            <button>Outra opção de botão salvar</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <label for="estado">Escolha seu Estado:</label>
+    <select name="estado" id="estados">
+        <option>Selecione um Estado</option>
+        <option value="PR">Paraná</option>
+        <option value="SP">São Paulo</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RJ">Rio de Janeiro</option>
+    </select>
+
+    <hr>
+
+    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
+    <hr>
+
+    <!-- Utilizar o multipart para enviar qualquer tipo de arquivo-->
+    <form action="#" enctype="multipart/form-data">
+        <input list="cidades">
+        <datalist id="cidades">
+            <option value="Maringá"></option>
+            <option value="Londrina"></option>
+            <option value="Unuarama"></option>
+            <option value="Cascavel"></option>
+            <option value="Foz do Iguaçu"></option>
+            <option value="Curitiba"></option>
+        </datalist>
+
+        <hr>
+        <input type="checkbox"  name="adicionais[]" value="queijo">Dobro de queijo
+        <input type="checkbox"  name="adicionais[]" value="hamburguer">Dobro Hamburguer
+        <input type="checkbox"  name="adicionais[]" value="ovo">Ovo
+        <input type="checkbox"  name="adicionais[]" value="bacon">Dobro Bacon
+
+        <hr>
+        <input type="radio" name="forma_de+pagamento" value="credito">Cartão de Crédito
+        <input type="radio" name="forma_de+pagamento" value="dinheiro">Dinheiro
+        <input type="radio" name="forma_de+pagamento" value="debito">Cartão de Debito
+        <input type="radio" name="forma_de+pagamento" value="fiado">Pendura na conta
+
+        <hr>
+        <input type="color">
+
+        <hr>
+        <input type="date">
+        <input type="datetime-local">
+
+        <hr>
+        <input type="email" placeholder="seu email">
+
+        <hr>
+        <input type="file">
+
+        <hr>
+        <input type="hidden" value="Tá procurando alguma coisa? Curioso!">
+
+        <hr>
+        <input type="number">
+
+        <hr>
+        <input type="reset">
+
+        <hr>
+        <input type="search">
+
+        <hr>
+        <input type="range">
+
+        <hr>
+        <input type="tel">
+
+        <hr>
+        <input type="password">
+
+        <hr>
+        <input type="time">
+    </form>
+</body>
+</html>

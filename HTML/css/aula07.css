@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#main {
+    margin: 15px 0;
+}
+
+input[type] {
+    border: 2px solid red;
+    padding: 2px;
+}
+
+input[type="text"] {
+    background-color: aqua;
+}
+
+input[type="email"] {
+    background-color: violet;
+}
+
+input[type="button"] {
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Quando o paragrafo INICIA com */
+p[title^="E"] {
+    background-color: gray;
+}
+
+/* Quando o paragrafo ENCERRA com*/
+p[title$="JavaScript"] {
+    background-color: green;
+}
+
+/* Quando o paragrafo CONTEM uma palavra */
+p[title~="gosto"]{
+    background-color: red;
+}

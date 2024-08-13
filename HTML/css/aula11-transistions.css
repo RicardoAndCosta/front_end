@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5px 0 0 5xp;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    transition-duration: 2s;
+    transition-property: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 1px;
+}
+
+.container:hover .box {
+    width: 150px;
+    background: red;
+    transform: translateX(400px) rotate(720deg);
+}
+
+.ease {
+    background: #100997;
+    transition-timing-function: ease;
+    /* O ease tem um comportamento mais simetrico na "evolução da transição*/
+}
+
+.ease-in {
+    background: #170ec4;
+    transition-timing-function: ease-in;
+    /* O ease-in é mais lento no começo e acelera no final */
+}
+
+.ease-out {
+    background: #150ae6;
+    transition-timing-function: ease-out;
+    /* O ease-out é mais rápido no começo e mais lento no final*/
+}
+
+.ease-in-out {
+    background: #271ceb;
+    transition-timing-function: ease-in-out;
+    /* O ease-in-out começa rápido fica lento no meio e no final acelera novamente */
+}
+
+.linear {
+    background: #1a0ef4;
+    transition-timing-function: linear;
+    /* O linear é mais constante em toda a transição */
+}
+
+.cubic {
+    background: #372dfc;
+    transition-timing-function: cubic-bezier(0.31, 0.93, 0.65, 0.1);
+    /* O linear é mais constante em toda a transição */
+}

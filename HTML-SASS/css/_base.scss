@@ -1,0 +1,87 @@
+/* 
+
+Quando o nome de um arquivo SCSS iniciar por _(underline) significa que ele não será iniciado 
+automaticamente pelo SASS, mas apenas quando for chamado
+
+*/
+
+$red-text-color: red;
+$background-color: rgb(70, 32, 124);
+$background-color-white: #fff;
+
+body {
+    background-color: $background-color;
+}
+
+p {
+    color: $red-text-color;
+}
+
+@mixin box-shadow($color) {
+    box-shadow: 4px 4px 4px 0 $color;
+}
+
+@mixin negrito($boolean) {
+    @if ($boolean == true){
+        font-weight: bold;
+    }
+}
+
+@mixin text-effect($val) {
+
+    @if $val == danger {
+        color: red
+    }
+    @else if $val == alert {
+        color: orange;
+    }
+    @else if $val == primary {
+        color: blue;
+    }
+    @else {
+        color: black
+    }
+}
+
+$colors: (color1: blue, color2: red, color3: green);
+
+@for $i from 1 through 5{
+    .text-#{$i} {
+        font-size: 15px * $i;
+    }
+}
+
+@each $key, $color in $colors {
+    .#{$color}-text {
+        color: $color;
+    }
+}
+
+
+.container {
+    @include box-shadow(rgb(206, 23, 23));
+    $lightred-text-color: rgb(243, 124, 124);
+    width: 200px;
+    height: 200px;
+    background-color: $background-color-white;
+    p {
+        @include box-shadow(rgb(29, 206, 23));
+        @include negrito(true);
+        width: 110px;
+        height: 110px;
+        color: $lightred-text-color;
+    }
+}
+
+/* 
+como a variavel está dentro de um escopo ela só funciona nele 
+
+p {
+    color: $lightred-text-color;
+}
+*/
+
+p {
+    color: $red-text-color;
+    @include text-effect(alert);
+}

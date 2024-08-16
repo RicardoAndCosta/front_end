@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+/* criação de variaveis no css */
+/* Algo que é interessante pesquisar é SASS, sugestão https://sass-lang.com/ */
+
+:root {
+    --vermelho: #dc3320;
+    --verde: #248504;
+    --amarelo: #fcba3f; 
+}
+
 body {
     margin: 5px 0 0 5xp;
     font-family: 'Roboto', sans-serif;
@@ -36,26 +45,32 @@ body {
 
 .um {
     height: 90px;
+    background-color: var(--vermelho);
 }
 
 .dois {
     height: 30px;
+    background-color: var(--verde);
 }
 
 .tres {
     height: 50px;
+    background-color: var(--vermelho);
 }
 
 .quatro {
     height: 110px;
     font-size: 45px;
+    background-color: var(--amarelo);
 }
 
 .cinco {
     height: 60px;
+    background-color: var(--verde);
 }
 
 .seis {
     height: 50px;
     font-size: 30px;
+    background-color: var(--amarelo);
 }

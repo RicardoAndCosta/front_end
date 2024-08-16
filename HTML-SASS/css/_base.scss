@@ -57,6 +57,58 @@ $colors: (color1: blue, color2: red, color3: green);
     }
 }
 
+/* Função */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@function fontColor($bgcolor) {
+    @if(lightness($bgcolor) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #FFF;
+    }
+}
+
+@function boxPosition($cols, $rows:12) {
+    @return percentage($cols / $rows);
+}
+
+/* 
+
+A diferença entre mixin e função é que o mixin retorna uma propriedade que estou passando 
+enquanto uma função retorna um valor que será utilizado em um determinado local
+
+*/
+
+@mixin bgColor($bgcolor){
+    background-color: $bgcolor;
+    color:fontColor($bgcolor);
+}
+
+@for $i from 0 through 4 {
+    $x: $i*3;
+    $f: $i+1;
+    .box#{$i+1} {
+        @extend .flex;
+        @include bgColor(#df2ed0);
+        font-size: 10px * $f;
+        position: absolute;
+        border: 2px red solid;
+        width: 120px;
+        height: 120px;
+        top: boxPosition($x);
+        left: boxPosition($x);
+        
+        &:hover {
+            cursor: pointer;
+            background-color: aqua;
+        }
+    }
+}
 
 .container {
     @include box-shadow(rgb(206, 23, 23));

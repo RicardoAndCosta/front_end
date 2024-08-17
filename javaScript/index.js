@@ -70,3 +70,23 @@ console.log(media);
 console.log(media.toFixed(2));
 
 console.log(Math.ceil(media));
+
+// Curiosidades do JavaScript
+console.log('10' + 2); 
+console.log('10' * 2);
+console.log('10' / 2);
+console.log('teste' * 2); //NaN - Not a Number
+console.log(7/0); //Infinity
+console.log(0.7 + 0.1); //0.79999999999999999 isso vem de uma convenção o ES5
+console.log(109.76456468.toFixed(2)); // se tentar console.log(109.toFixed(2)) ele não funciona, para forçar console.log((109).toFixed(2))
+
+// Calculo de area com funções matematicas
+const raioG = 35;
+const raioP = 25;
+
+const areaG = Math.PI * Math.pow(raioG, 2);
+const areaP = Math.PI * Math.pow(raioP, 2);
+
+console.log(areaG, areaP);
+const diferenca = (areaG -areaP) / Math.PI
+console.log(`a diferença entre as areas é de ${diferenca.toFixed(2)}cm`);

@@ -1,0 +1,39 @@
+{
+  "films": [
+    {
+      "id": "1",
+      "title": "Liga da Justiça - SnyderCut",
+      "director": "Zack Snyder",
+      "genre": "Ação",
+      "year": 2021
+    },
+    {
+      "id": "2",
+      "title": "Godzilla Vs Kong",
+      "director": "Adam Wingard",
+      "genre": "Ação",
+      "year": 2021
+    },
+    {
+      "id": "3",
+      "title": "WandVison",
+      "director": "Jac Schaeffer",
+      "genre": "Comédia",
+      "year": 2021
+    },
+    {
+      "id": "4",
+      "title": "Cavaleiros do Zodiaco",
+      "director": "Massami Kurumada",
+      "genre": "Anime",
+      "year": 1985
+    },
+    {
+      "id": 5,
+      "title": "Dragon Ball Z",
+      "director": "Akira Toryama",
+      "genre": "Anime",
+      "year": 1990
+    }
+  ]
+}

@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/template/header/header.component';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { NavigationComponent } from './components/template/navigation/navigation.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @Component({
@@ -11,7 +15,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    MatToolbarModule
+    FooterComponent,
+    NavigationComponent,
+    MatToolbarModule,
+    MatListModule,
+    MatSidenavModule
   ],
   templateUrl: 'app.component.html'
 })
